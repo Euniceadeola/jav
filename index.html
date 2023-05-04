@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codelearn</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>CODELEARN GROW</h1>
+    <label for="">First Name</label>
+        <input type="text" name="your name" id=""> <br>
+ 
+    <label for="">Middle Name</label>
+        <input type="text" name="your name" id=""> <br>
+    
+    <label for="">Last Name</label>
+        <input type="text" name="your name" id=""> <br>
+    <br>
+   
+    <label for="Email"> Email</label>
+        <input type="email" name="your email" id=""> <br>
+    <label for="">Contact</label>
+        <input type="tel" name="" id=""><br>
+ 
+    <label for="message"> Your Comment</label> <br>
+    <textarea name="your message" id="" cols="30" rows="3"></textarea> <br>
+   
+        <button type="submit" onclick="openpopup()">sign in </button>
+    <div class="popup" id="popup">
+            <h2>Codelearn Grow</h2>
+        <p> Wish you success 🎉as you continue your 💻Tech journey 👍, sit tight for the journey🚓 is amazing and refreshing</p>
+        <button type="button" onclick="closepopup()">ok</button>
+
+    </div>
+<script>
+    let popup = document.getElementById("popup");
+
+    function openpopup() {
+        popup.classList.add("open-popup");
+    }
+    function closepopup() {
+        popup.classList.remove("open-popup");
+    }
+</script>
+</body>
+</html>    
